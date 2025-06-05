@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Model032</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      display: flex;
+      height: 100vh;
+      background: black;
+    }
+    #sidebar {
+      width: 500px;
+      background: #000;
+      padding: 20px;
+      box-sizing: border-box;
+      overflow-y: auto;
+      border-right: 1px solid #333;
+    }
+    #sidebar h1 {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+      color: white;
+      padding: 0;
+      background: none;
+    }
+    #sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    #sidebar li {
+      margin-bottom: 10px;
+    }
+    #sidebar a {
+      text-decoration: none;
+      color: #eee;
+      padding: 10px 15px;
+      display: block;
+      border-radius: 4px;
+      background-color: #333;
+    }
+    #sidebar a:hover {
+      background-color: #555;
+    }
+    #viewer {
+      flex-grow: 1;
+      height: 100vh;
+      border: none;
+      background: white;
+    }
+  </style>
+</head>
+<body>
+  <div id="sidebar">
+    <h1>Model 032_DESIGN AS DATA, DATA AS DESIGN</h1>
+    <ul>
+      <li><a href="#" onclick="loadProject('Data_Describes_Design_Graphic_Elements/index.html')">Data Describes Design: Graphic Elements</a></li>
+      <li><a href="#" onclick="loadProject('Data_Describes_Design_Typography/index.html')">Data Describes Design: Typography</a></li>
+      <li><a href="#" onclick="loadProject('Data_Describes_Design_Changed_by_Data/index.html')">Data Describes Design: Changed by Data</a></li>
+      <li><a href="#" onclick="loadProject('Calculating_RGB_Values/index.html')">Calculating: RGB Values</a></li>
+      <li><a href="#" onclick="loadProject('Calculating_Image_Pixel_Relationship/index.html')">Calculating: Image, Pixel, Relationship</a></li>
+      <li><a href="#" onclick="loadProject('Calculating_Generative/index.html')">Calculating: Generative</a></li>
+      <li><a href="#" onclick="loadProject('Generative_Intelligence_Body_Recognition/index.html')">Generative Intelligence: Body Recognition</a></li>
+      <li><a href="#" onclick="loadProject('Generative_Intelligence_Segmentation/index.html')">Generative Intelligence: Segmentation</a></li>
+      <li><a href="#" onclick="loadProject('Generative_Intelligence_ Image_to_Image/index.html')">Generative Intelligence: Image to Image</a></li>
+    </ul>
+  </div>
+  <iframe id="viewer" name="viewer" src="" frameborder="0" width="100%"></iframe>
+
+  <script>
+    function loadProject(url) {
+      document.getElementById('viewer').src = url;
+    }
+  </script>
+</body>
+</html>
